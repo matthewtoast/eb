@@ -1,0 +1,70 @@
+{
+  "name": "eb",
+  "private": true,
+  "main": "index.js",
+  "version": "0.0.0",
+  "engines": {
+    "node": "12.x"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "ts": "cross-env NODE_ENV=development node_modules/.bin/ts-node -r dotenv/config -P tsconfig.json -O '{\"module\": \"commonjs\"}'",
+    "tape": "yarn run ts './node_modules/.bin/tape'",
+    "test": "yarn tape './test/**/*.test.ts' | './node_modules/.bin/tap-spec'",
+    "study": "yarn tape './test/**/*.study.ts' | './node_modules/.bin/tap-spec'",
+    "format": "yarn prettier --loglevel error --write '**/*.{js,jsx,ts,tsx}'",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "launch": "node ./scripts/launch.js"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.13.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "dotenv-cli": "^4.0.0",
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5",
+    "eslint": "^7.21.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "foreman": "^3.0.1",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.31",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  },
+  "build": {
+    "asar": false,
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}",
+      "!**/{.vscode,scripts,test,.eslintignore,.eslintrc.js,.gitignore,.huskyrc,.lintstagedrc,.nvmrc,.prettierignore,.prettierrc.yaml,.slugignore,lerna.json,README.md,setup.sh,yarn.lock}"
+    ]
+  }
+}

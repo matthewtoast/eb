@@ -1,0 +1,15 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "stream": true,
+  "private": true,
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "version": "independent"
+}

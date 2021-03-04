@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "strict": false,
+    "target": "es5",
+    "jsx": "react",
+    "noEmit": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": false,
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "references": [],
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "node_modules",
+    "dist",
+    "vendor",
+    "public",
+    "stories"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "compileOnSave": false
+}

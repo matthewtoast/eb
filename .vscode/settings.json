@@ -1,0 +1,103 @@
+{
+    "files.associations": {
+        "*.js": "javascript",
+        "*.jsx": "javascriptreact",
+        "*.ts": "typescript",
+        "*.tsx": "typescriptreact",
+    },
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "eslint.packageManager": "yarn",
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": true
+        }
+    },
+    "[mdx]": {
+        "editor.wordWrap": "on",
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+    },
+    "gutterpreview.imagePreviewMaxHeight": 200,
+    "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+    "pasteImage.namePrefix": "${currentFileNameWithoutExt}",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "todo.file.name": "TODO.taskpaper",
+    "todo.file.defaultContent": "\nTodo:\n  ☐ Item\n",
+    "todo.file.include": ["tasks-*.md", "*.taskpaper", "*.todo.md"],
+    "todo.file.view.expanded": true,
+    "todo.indentation": "  ",
+    "todo.symbols.box": "-",
+    "todo.symbols.done": "-",
+    "todo.symbols.cancelled": "-",
+    "[todo]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "cSpell.words": [
+        "Cyclomatic",
+        "KHTML",
+        "Mixpanel",
+        "Multiline",
+        "URL's",
+        "actioncable",
+        "activestorage",
+        "calendly",
+        "camelcase",
+        "datetime",
+        "dropzone",
+        "fontawesome",
+        "fortawesome",
+        "jszip",
+        "queryparam",
+        "rubocop",
+        "signup",
+        "signups",
+        "titleize",
+        "turbolinks",
+        "typecheck",
+        "webpacker"
+    ],
+}

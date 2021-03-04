@@ -1,0 +1,6 @@
+/scripts/
+/docs/
+/docker/
+.idea/
+.vscode/
+/node_modules/

@@ -1,0 +1,10 @@
+node_modules
+public
+tmp
+vendor
+*.md
+**/*.md
+*.json
+**/*.json
+**/*node_modules/
+**/*dist/
